@@ -2,13 +2,12 @@ import React, { Component } from "react";
 import Jumbotron from "../components/Jumbotron";
 import Card from "../components/Card";
 import Form from "../components/Form";
-import Book from "../components/Book";
 import Footer from "../components/Footer";
 import API from "../utils/API";
 import { Col, Row, Container } from "../components/Grid";
 import { List } from "../components/List";
 
-class Saved extends Component {
+class Add extends Component {
   state = {
     books: []
   };
@@ -60,7 +59,7 @@ class Saved extends Component {
             <Card title="Recently Logged Drinks" icon="">
               {this.state.books.length ? (
                 <List>
-                  {this.state.books.map(book => (
+                  {/* {this.state.books.map(book => (
                     <Book
                       key={book._id}
                       title={book.title}
@@ -78,7 +77,7 @@ class Saved extends Component {
                         </button>
                       )}
                     />
-                  ))}
+                  ))} */}
                 </List>
               ) : (
                   <h2 className="text-center">No drinks?! You must be thirsty AF.</h2>
@@ -92,4 +91,4 @@ class Saved extends Component {
   }
 }
 
-export default Saved;
+export default Add;

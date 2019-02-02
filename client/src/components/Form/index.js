@@ -20,6 +20,21 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
         <br></br>
         <br></br>
         <label htmlFor="Query">
+          <strong>Volume (fl oz): </strong>
+        </label>
+        <input
+          className="form-control"
+          id="Title"
+          type="text"
+          value={q}
+          placeholder="How much?"
+          name="q"
+          onChange={handleInputChange}
+          required
+        />
+        <br></br>
+        <br></br>
+        <label htmlFor="Query">
           <strong>Alchohol Content: </strong>
         </label>
         <input
